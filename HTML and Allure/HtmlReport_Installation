@@ -1,0 +1,21 @@
+Install PyTest:
+pip install -U pytest
+and
+pip3 install -U pytest
+
+pip install html-testRunner
+
+do "import HtmlTestRunner" to your test file
+or
+do "import HTMLTestRunner" to your test file
+
+add folder "HtmlReports" to your project
+
+add path to your test file footer:
+ if __name__ == '__main__':
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='./HtmlReports'))
+
+run your test file from Terminal like:
+python unittest14.py
+or
+py unittest14.py
